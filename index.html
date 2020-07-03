@@ -1,0 +1,290 @@
+<!-- 
+====================================================
+            AUTHOR: ABHISHEK CHOHAN
+====================================================  
+           PROJECT: Portfolio
+====================================================  
+====================================================  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Abhishek Chohan</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat%7CUbuntu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    ScrollReveal({ reset: false });  // change this to true to loop the animate effect
+  </script>
+  <style>
+    html.sr .load-hidden {
+      display: none;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body class="scrollable scrollable-conatiner" data-spy="scroll" data-target="#navbar" data-offset="100">
+  <!-- TITLE SECTION INCLUDING NAVBAR FIXED STYLED -->
+  <section id="title">
+    <!-- BOOTSTRAP NAVBAR -->
+    <div class="container-fluid">
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand brand-style" href="#title">Abhishek Chohan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#Resume">Resume</a>
+            <a class="nav-item nav-link" href="#Contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- TITLE SECTION ONLY -->
+      <div class="row">
+        <div class="col-lg-3 animate-title-right">
+          <div class="img-container">
+            <img class="main-img" src="images/my-image.png" alt="my-photo" />
+          </div>
+        </div>
+        <div class="col-lg-9 animate-title-left">
+          <h2 class="main-heading">
+            <p>Hey there! I'm Abhishek Chohan, a full-stack developer.</p>
+            <p>I’m a creative and passionate, self-taught web developer, who loves designing and developing
+              for
+              the latest trends and bringing my creativity to life!</p>
+
+          </h2>
+        </div>
+      </div>
+      <div class="down-button"><a href="#projects"
+          class="animate__animated animate__bounce animate__repeat-3 fas nav-link text-light fa-4x fa-angle-double-down"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="row">
+      <h1 class="col-sm-6">Projects</h1>
+      <div class="col-sm-6 top-button"><a href="#title"
+          class="animate__animated animate__bounce animate__repeat-3 fas nav-link text-dark fa-3x fa-angle-double-up"></a>
+      </div>
+    </div>
+    <br>
+    <mobile>Note: Click on each project image for its respective options.</mobile>
+    <hr>
+    <div class="projects row">
+      <div class="projects-col project-data col-lg-6">
+        <div class="project-pic">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/instagram.png" alt="instagram" style="width:100%;">
+              </div>
+              <div class="flip-card-back">
+                Source Code and Live Demo is avaialable to preview.<br><br>
+                <a href="https://github.com/abhishekchohan/instagram-clone" target="_blank" class="hvr-float-shadow"><i
+                    class="fab fa-3x fa-github "> G i t h u b </i></a><br><br>
+                <a href="http://instagram-mern.herokuapp.com/" target="_blank" class="hvr-float-shadow"><i
+                    class="fa-3x far fa-arrow-alt-circle-right"> V i s i t </i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-col project-info col-lg-6">
+        <h2 class="project-name">Instagram Clone</h2>
+        <p>Instagram Clone - a clone of instagram app with almost all of the functionalities implemented into it. We can
+          register/login users, update profiles, look for followers, user profiles, followings, likes, comments, upload
+          profile pics, save favourite posts, create new posts/delete posts and many more. It is based on MERN
+          (MongoDB-Express-React-Node) stack. I have used some other technologies as well such as Redux, React-Router,
+          JWT, Postman - to test backend Restful APIs and Bcrypt as Hash Algo.</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="projects row">
+      <div class="projects-col project-info col-lg-6">
+        <h2 class="project-name">CaTindr</h2>
+        <p>CaTindr is a Product Landing Page. Its a kind of clone for Tinder's Landing page except I used the Idea of
+          making Tinder for cats. It has all the sections that any product landing page should have. I have used
+          different technologies and libraries to enhance UX. Bootstrap, ScrollReveal , JQuery , CSS, HTML & JS with the
+          Mobile-First approach.</p>
+      </div>
+      <div class="projects-col project-data col-lg-6">
+        <div class="project-pic">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/project1.png" alt="project1" style="width:100%;">
+              </div>
+              <div class="flip-card-back">
+                Source Code and Live Demo is avaialable to preview.<br><br>
+                <a href="https://github.com/abhishekchohan/CaTindr" target="_blank" class="hvr-float-shadow"><i
+                    class="fab fa-3x fa-github "> G i t h u b </i></a><br><br>
+                <a href="https://abhishekchohan.github.io/CaTindr/" target="_blank" class="hvr-float-shadow"><i
+                    class="fa-3x far fa-arrow-alt-circle-right"> V i s i t </i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="projects row">
+      <div class="projects-col project-data col-lg-6">
+        <div class="project-pic">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/project2.png" alt="project2" style="width:100%;">
+              </div>
+              <div class="flip-card-back">
+                Source Code and Live Demo is avaialable to preview.<br><br>
+                <a href="https://github.com/abhishekchohan/keeper-src-code" target="_blank" class="hvr-float-shadow"><i
+                    class="fab fa-3x fa-github "> G i t h u b </i></a><br><br>
+                <a href="https://abhishekchohan.github.io/keeper/" target="_blank" class="hvr-float-shadow"><i
+                    class="fa-3x far fa-arrow-alt-circle-right"> V i s i t </i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-col project-info col-lg-6">
+        <h2 class="project-name">Keeper</h2>
+        <p>A Google keep inspired app with saving and viewing notes. It's made with different packages i.e React,
+          create-react-app, gh-pages and Bootstrap with Mobile-First approach using CSS grid features.
+          Source code, Compiled production build and a Live demo hosted on Github is available for review as well.</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="projects row">
+      <div class="projects-col project-info col-lg-6">
+        <h2 class="project-name">EJS BLOG</h2>
+        <p>EJS Blog is a blogging web app created from scratch using Expressjs, nodejs and ejs as a template view engine
+          along with MongoDB Atlas as database server, deployed on Heroku.
+          Features include all CRUD operations on posts. Moreover, you can search for any post using any keywords or
+          substrings. This app is fully responsive, made using mobile first approach.
+        </p>
+      </div>
+      <div class="projects-col project-data col-lg-6">
+        <div class="project-pic">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/project3.png" alt="project3" style="width:100%;">
+              </div>
+              <div class="flip-card-back">
+                Source Code and Live Demo is avaialable to preview.<br><br>
+                <a href="https://github.com/abhishekchohan/EJS-Blog" target="_blank" class="hvr-float-shadow"><i
+                    class="fab fa-3x fa-github "> G i t h u b </i></a><br><br>
+                <a href="https://ejsblog.herokuapp.com/" target="_blank" class="hvr-float-shadow"><i
+                    class="fa-3x far fa-arrow-alt-circle-right"> V i s i t </i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+  </section>
+  <!-- skillsS SECTION -->
+  <section id="skills">
+    <div class="row">
+      <h2 class="col-sm-6 skills-text">Skills</h2>
+      <div class="col-sm-6 top-button"><a href="#title"
+          class="animate__animated animate__bounce animate__repeat-3 fas nav-link text-light fa-3x fa-angle-double-up skills-top-btn"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card card-left">
+          <div class="card-header">
+            <i class="fas fa-chalkboard fa-4x"></i>
+            <h3>Front End </h3>
+          </div>
+          <div class="card-body">
+            <p>JavaScript</p>
+            <p>ReactJS</p>
+            <p>Redux</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card card-center">
+          <div class="card-header">
+            <i class="fas fa-cogs fa-4x"></i>
+            <h3>Back-End</h3>
+          </div>
+          <div class="card-body">
+            <p>NodeJS</p>
+            <p>Express</p>
+            <p>MongoDB/MySQL</p>
+            <p>Java/Python</p>
+            <p>REST API</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="card card-right">
+          <div class="card-header">
+            <i class="fas fa-microchip fa-4x"></i>
+            <h3>Extras</h3>
+          </div>
+          <div class="card-body">
+            <p>Bootstrap</p>
+            <p>Material UI</p>
+            <p>Heroku</p>
+            <p>Git/Github</p>
+            <p>JWT/PassportJS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer id="footer">
+    <div class="social_icons">
+      <a class="animate-title-left" href="mailto:abhishekchohan1@gmail.com?subject=HELLO!"><i
+          class="fas fa-at fa-4x"></i></a>
+      <a class="animate-title-left" href="https://github.com/abhishekchohan" target="_blank"><i
+          class="fab fa-github fa-4x"></i></a>
+      <a class="animate-title-right" href="https://www.linkedin.com/in/abhi-shek-chohan/" target="_blank"><i
+          class="fab fa-linkedin fa-4x"></i></a>
+
+    </div>
+    <p>Made with ❤️ & ☕ - Abhishek Chohan</p>
+  </footer>
+
+  <!-- ANIMAIONS SCRIPT -->
+  <script src="js/animations.js"> </script>
+
+  <!-- SMOOTH SCROLLING SCRIPT -->
+  <script src="js/smoothScroll.js"> </script>
+</body>
+
+</html>

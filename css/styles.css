@@ -1,0 +1,369 @@
+/* 
+====================================================
+            AUTHOR: ABHISHEK CHOHAN
+==================================================== 
+*/
+
+/* =================================================== */
+/* Scrollbar Css to beautify it */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import "scrollbar.css";
+@import "hover.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
+
+
+/* ================================================= */
+
+html { font-size: 2.4vw; }
+
+body {
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-button {
+  text-align: right;
+}
+
+.down-button {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  margin: 0 auto !important;
+}
+
+/* 
+====================================================
+              NAVBAR STYLING
+==================================================== 
+*/
+
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5rem;
+}
+
+
+#title {
+  min-height: 105.1vh;
+  /* background-image: linear-gradient(-225deg, #5d57ea 30%, #9647db 100%); */
+  background-color: #7a7adb;
+  background-image: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+  color: white;
+  padding-top: 2%;
+}
+
+/* Bootstrap class container-fluid override */
+.container-fluid {
+  padding: 6% 2%;
+}
+
+/* Navbar Styling */
+
+/* #title > .container-fluid > */
+.fixed-top {
+  padding: 0 2%;
+  text-shadow: 1px lightcoral;
+}
+
+/* navbar main logo/app name */
+.brand-style {
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
+.nav-item {
+  color: white !important;
+}
+
+/* 
+====================================================
+        FIRST SECTION TITLE EXCEPT NAVBAR
+==================================================== 
+*/
+
+/* h1 element */
+.main-heading {
+  line-height: 1.5;
+  padding: 15% 10% 0 10%;
+  color: white;
+  text-align: justify;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.main-img {
+  margin: 2rem 0 -2rem 0;
+  border-radius: 50%;
+  width: 60%;
+}
+
+/* 
+====================================================
+                skills SECTION
+==================================================== 
+*/
+
+#skills {
+  padding: 10% 2%;
+  margin-top: -15%;
+  background-color: #7a7adb;
+  background-image: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+  text-align: center;
+}
+
+#skills > h2 {
+  line-height: 4rem;
+}
+
+#skills > div > div {
+  margin: 1rem 0;
+}
+
+/* skills menu Card header,body and btns */
+.card,
+.card-body {
+  height: 100%;
+}
+
+.card-header {
+  height: 30%;
+}
+
+.skills-text {
+  color: white;
+  margin-left: -12.5%;
+  margin-top: 2%;
+}
+
+.skills-top-btn {
+  margin-right: -6rem;
+}
+
+i:hover {
+  color: #7a7adb;
+}
+
+/* 
+====================================================
+              Projects SECTION
+==================================================== 
+*/
+
+#projects {
+  padding: 10% 2%;
+  margin-top: -9.1%;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.projects-col {
+  text-align: justify;
+  padding: 2%;
+}
+
+.project-pic {
+  width: 100%;
+  margin-bottom: 20rem;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+  min-height: 10rem;
+  margin: 0 auto;
+  margin-bottom: 15%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  margin-top: 2rem;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* 
+====================================================
+              FOOTER SECTION
+==================================================== 
+*/
+
+#footer {
+  padding: 5% 15% 0.5% 15%;
+  line-height: 2rem;
+  text-align: center;
+  background-color: black;
+  color: #8f8f8f;
+  height: 12.5%;
+}
+
+.social_icons {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+
+/* unvisited link */
+.social_icons > a:link {
+  color: #8f8f8f;
+}
+
+/* visited link */
+.social_icons > a:visited {
+  color: #8f8f8f;
+}
+
+/* mouse over link */
+.social_icons > a:hover {
+  color: #8f8f8f;
+}
+
+/* selected link */
+.social_icons > a:active {
+  color: #8f8f8f;
+}
+
+.fa-1x {
+  margin: 15px 17.5px 0 17.5px;
+}
+
+/* 
+====================================================
+          DESKTOP COMPATIBILITY SECTION
+==================================================== 
+*/
+
+/* Media query for compatibility of higher-end device */
+@media (min-width: 992px) {
+
+
+  html { font-size: 1vw; }
+
+  .navbar{
+    transition:500ms ease;
+    background:transparent;
+  }
+  .navbar.scrolled{
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .navbar.scrolled-2
+  {
+    display: none !important;
+  }
+  #title {
+    min-height: 119vh;
+  }
+  #skills {
+    padding: 1% 15%;
+  }
+
+  .skills-text {
+    color: white;
+    margin-left: -17.5%;
+    margin-top: 2%;
+  }
+  
+  .skills-top-btn {
+    margin-right: -12.1rem;
+  }
+  
+  #projects {
+    padding: 1% 15% 15% 15%;
+    margin-top: .1%;
+  }
+  .container-fluid {
+    padding: 11% 15% 2% 15%;
+  }
+  .fixed-top {
+    padding: 0 15%;
+  }
+  
+  .main-img {
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .main-heading {
+    padding: 1rem 10%;
+  }
+  .project-pic {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Media query for compatibility of Tablets device ipad / ipad pro */
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+  html { font-size: 1vw; }
+  .main-img {
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .main-heading {
+    padding: 1% 10%;
+  }
+
+  .project-pic {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (hover: hover) {
+  mobile {
+    display: none;
+  }
+  
+}
+
+/*
+====================================================
+              THE END
+==================================================== 
+*/
