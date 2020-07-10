@@ -356,7 +356,7 @@ i:hover {
 
 
 @media (hover: hover) {
-  .mobileDevice {
+  div.mobileDevice {
     display: none;
   }
   
