@@ -8,7 +8,6 @@ Portfolio - currently built with vanilla javscript and HTML and CSS. This projec
 - ScrollReveal (For Animations)
 - Javascript & JQuery
 - Github Pages (Hosting)
-- GoDaddy (custom domain)
 
 #### Design Specs: Mobile First Approach.
 
